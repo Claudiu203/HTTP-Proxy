@@ -7,10 +7,17 @@ Când o cerere este primită de la client, proxy-ul o parsează și, opțional, 
 Creează o conexiune către Google (sau alt server specificat) și trimite cererea clientului mai departe.
 Proxy-ul primește răspunsul serverului de destinație, îl poate modifica (de exemplu, adăugând un header) și îl trimite înapoi către client.
 3. Interfata Grafia:
-Vrem sa folosim PyQt sau PySide.
-Folosim PyQt sau PySide pentru a crea ferestre, butoane, și alte elemente vizuale.
-Creăm un buton de pornire pentru serverul proxy care inițiază funcția start_proxy_server.
-Afisam cererea si permitem modificarea ei (Adăugăm afișaj pentru a vedea cererile active și eventual să oferim opțiuni de configurare a comportamentului proxy-ului.)
+Interfața Grafică în Qt C++
+Vom folosi Qt pentru a crea feronțe, butoane și alte elemente vizuale necesare aplicației.
+Crearea unei ferestre Principale:
+        Proiectăm o fereastra principală care va conține toate elementele necesare pentru controlul serverului proxy.
+Buton pentru Pornirea Serverului Proxy:
+        Implementăm un buton dedicat pentru a porni serverul proxy, care va iniția funcția corespunzătoare pentru a lansa serverul.
+Afișarea Cererilor:
+        Adăugăm un widget text care va afișa cererile active și răspunsurile de la server.
+        Permitem utilizatorului să modifice cererile, oferind astfel opțiuni pentru configurarea comportamentului serverului proxy.
+Opțiuni de Configurare:
+        Oferim opțiuni suplimentare în interfață pentru a ajusta comportamentul proxy-ului, cum ar fi filtrarea cererilor sau modificarea header-elor HTTP.
 4. Extensii proiect:
 Configurare avansată în GUI: Adaugă opțiuni suplimentare pentru configurarea proxy-ului direct din interfața grafică, cum ar fi schimbarea serverului de destinație, portul de ascultare, sau moduri de autentificare.
 Jurnalizare detaliată: Loghează cererile și răspunsurile procesate pentru a putea urmări traficul.
