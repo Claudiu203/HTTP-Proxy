@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/claudiu/Documents/pso/proiect/HTTP-Proxy/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -isystem /home/claudiu/Qt/6.8.0/gcc_64/include/QtWidgets -isystem /home/claudiu/Qt/6.8.0/gcc_64/include -isystem /home/claudiu/Qt/6.8.0/gcc_64/include/QtCore -isystem /home/claudiu/Qt/6.8.0/gcc_64/mkspecs/linux-g++ -isystem /home/claudiu/Qt/6.8.0/gcc_64/include/QtGui -g -fPIC -o CMakeFiles/HTTP_Proxy.dir/src/main.cpp.o -c /home/claudiu/Documents/pso/proiect/HTTP-Proxy/src/main.cpp",
+  "file": "/home/claudiu/Documents/pso/proiect/HTTP-Proxy/src/main.cpp",
+  "output": "CMakeFiles/HTTP_Proxy.dir/src/main.cpp.o"
+}
+]

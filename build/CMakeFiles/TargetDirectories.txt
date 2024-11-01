@@ -1,0 +1,3 @@
+/home/claudiu/Documents/pso/proiect/HTTP-Proxy/build/CMakeFiles/HTTP_Proxy.dir
+/home/claudiu/Documents/pso/proiect/HTTP-Proxy/build/CMakeFiles/edit_cache.dir
+/home/claudiu/Documents/pso/proiect/HTTP-Proxy/build/CMakeFiles/rebuild_cache.dir
