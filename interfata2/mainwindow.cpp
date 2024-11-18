@@ -37,12 +37,9 @@ void MainWindow::on_pushButtonBrowser_clicked()
         // Intercept activat
         QMessageBox::information(this, "Intercept Mode", "Intercept mode is ON. Requests will be captured.");
 
-        // Pornim un proces de browser în sistem
-        // Exemplu: deschide browser-ul Chrome cu un URL gol sau pagina de pornire
-        QProcess *browserProcess = new QProcess(this);
-        QString browserPath = "/usr/bin/firefox";  // Înlocuiește cu calea completă către executabilul browser-ului tău (ex: Chrome, Firefox)
-        browserProcess->start(browserPath);
-
+        // Deschide Firefox cu profilul specific și URL-ul de pornire
+        QString url = "http://google.com"; // Poți seta URL-ul pe care vrei să-l deschizi
+        openFirefoxWithProxyProfile(url);
     }
 }
 
@@ -51,5 +48,18 @@ void MainWindow::on_pushButtonSend_clicked()
 {
     //this->proxy->setQtext(ui->textEdit_1);
     this->proxy->sendRequest();
+}
+
+void MainWindow::openFirefoxWithProxyProfile(const QString &url)
+{
+    QString firefoxPath = "/usr/bin/firefox"; // Calea către Firefox
+    QStringList args;
+    args << "-p" << "http_proxy" // Profilul specific pe care îl vei folosi
+         << "--no-remote"
+         << "-new-instance"     // Lansează o instanță nouă a Firefox
+         << url;                // URL-ul care va fi deschis
+
+    QProcess *process = new QProcess();
+    process->start(firefoxPath, args);
 }
 

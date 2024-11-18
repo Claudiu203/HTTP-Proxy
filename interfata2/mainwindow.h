@@ -24,7 +24,7 @@ private slots:
     void on_pushButtonBrowser_clicked();
 
     void on_pushButtonSend_clicked();
-
+    void openFirefoxWithProxyProfile(const QString &url);
 private:
     Ui::MainWindow *ui;
     Proxy *proxy ;
