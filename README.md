@@ -1,6 +1,5 @@
 # **HTTP-Proxy**
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 **Un proxy HTTP care permite interceptarea, modificarea și gestionarea traficului web printr-o interfață grafică minimalistă.**
 
 ---
