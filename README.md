@@ -1,28 +1,53 @@
-# HTTP-Proxy
-1. Cererea si configurarea:
-Folosim socket server TCP/IP-asculta pt conexiuni HTTP
-Configurare pentru mai multe conexiuni: gestionarea fiecarei conexiuni intr-un thread separat (mai multe cereri paralel), astfel încât fiecare client să poată trimite cereri independent de ceilalți.
+# **HTTP-Proxy**
 
-2. Gestionarea cereri de la clienti:
-Clientul trimite cererea catre proxy.
-Când o cerere este primită de la client, proxy-ul o parsează și, opțional, modifică header-ele.
-Creează o conexiune către Google (sau alt server specificat) și trimite cererea clientului mai departe.
-Proxy-ul primește răspunsul serverului de destinație, îl poate modifica (de exemplu, adăugând un header) și îl trimite înapoi către client.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+**Un proxy HTTP care permite interceptarea, modificarea și gestionarea traficului web printr-o interfață grafică minimalistă.**
 
-3. interfata Grafia:
-Interfața Grafică în Qt C++
-Vom folosi Qt pentru a crea ferestre, butoane și alte elemente vizuale necesare aplicației.
-Crearea unei ferestre Principale:
-        Proiectăm o fereastra principală care va conține toate elementele necesare pentru controlul serverului proxy.
-Buton pentru Pornirea Serverului Proxy:
-        Implementăm un buton dedicat pentru a porni serverul proxy, care va iniția funcția corespunzătoare pentru a lansa serverul.
-Afișarea Cererilor:
-        Adăugăm un widget text care va afișa cererile active și răspunsurile de la server.
-        Permitem utilizatorului să modifice cererile, oferind astfel opțiuni pentru configurarea comportamentului serverului proxy.
-Opțiuni de Configurare:
-        Oferim opțiuni suplimentare în interfață pentru a ajusta comportamentul proxy-ului, cum ar fi filtrarea cererilor sau modificarea header-elor HTTP.
+---
 
-4. Extensii proiect:
-	Jurnalizare detaliată: Loghează cererile și răspunsurile procesate pentru a putea urmări traficul.
-	Modificări mai avansate ale cererilor/răspunsurilor: Oferă opțiuni pentru filtrarea cererilor bazate pe URL sau alte criterii (ex. blocarea anumitor site-uri).
-	Monitorizarea traficului: Vizualizarea cererilor active și informații despre dimensiunea traficului.
+## **Cuprins**
+1. [Despre proiect](#despre-proiect)
+2. [Funcționalități](#funcționalități)
+3. [Capturi de ecran](#capturi-de-ecran)
+4. [Tehnologii folosite](#tehnologii-folosite)
+
+---
+
+## **Despre proiect**
+
+**HTTP-Proxy** este un tool C++ multithreaded, cu o interfață grafică creată în Qt, care permite interceptarea și manipularea requesturilor HTTP. Scopul aplicației este de a oferi o unealtă simplă pentru depanarea și analiza traficului web, precum și pentru a învăța mai multe despre protocoalele HTTP.
+
+### **Caracteristici generale**
+- Interceptează requesturi HTTP și răspunsurile aferente.
+- Permite modificarea requesturilor înainte de a le trimite mai departe.
+- Afișează și memorează toate requesturile și răspunsurile în timp real.
+- Salvează loguri detaliate în fișierul `log.txt`.
+- Multithreading pentru gestionarea mai multor conexiuni simultane.
+
+---
+
+## **Funcționalități**
+
+- ✅ **Interceptare trafic HTTP**: Preia și analizează requesturile trimise de client către server.
+- ✅ **Modificare requesturi**: Editează requesturile interceptate dintr-o interfață grafică minimalistă.
+- ✅ **Log detaliat**: Salvează toate requesturile și răspunsurile într-un fișier `log.txt` pentru debugging și referințe ulterioare.
+- ✅ **Gestionare multi-conexiune**: Utilizează multithreading pentru a permite procesarea simultană a mai multor requesturi.
+- ✅ **Listă interactivă**: Vizualizează toate requesturile și răspunsurile într-o listă interactivă din aplicație.
+
+---
+
+## **Capturi de ecran**
+
+*Adaugă imagini aici pentru a arăta interfața grafică și exemple de utilizare.*  
+
+![Screenshot - Interfața principală](path_to_screenshot_1.png)  
+![Screenshot - Editarea unui request](path_to_screenshot_2.png)
+
+---
+
+## **Tehnologii folosite**
+
+- **C++**: Backendul aplicației, inclusiv procesarea requesturilor și răspunsurilor.
+- **Qt**: Crearea interfeței grafice minimaliste.
+- **Multithreading**: Gestionarea conexiunilor HTTP multiple simultan.
+- **Log Management**: Salvarea datelor în fișierul `log.txt` pentru referințe.
