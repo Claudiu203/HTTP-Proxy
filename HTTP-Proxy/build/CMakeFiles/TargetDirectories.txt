@@ -1,0 +1,9 @@
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/HTTP-Proxy.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/edit_cache.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/rebuild_cache.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/list_install_components.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/install.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/install/local.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/install/strip.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/HTTP-Proxy_autogen_timestamp_deps.dir
+/home/claudiu/Documents/costii/HTTP-Proxy/build/CMakeFiles/HTTP-Proxy_autogen.dir
